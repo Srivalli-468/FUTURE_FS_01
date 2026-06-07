@@ -24,7 +24,7 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Welcome to my professional portfolio! I am a 2nd-year Electronics and Communication Engineering student passionate about learning full-stack web development and building interactive applications.</p>
+        <p>Welcome to my professional portfolio! I am a 3nd-year Electronics and Communication Engineering student passionate about learning full-stack web development and building interactive applications.</p>
     </section>
 
     <section id="skills">
@@ -45,16 +45,19 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            
+            <input type="hidden" name="access_key" value="1f996d88-7eeb-4344-817a-faf885697d62">
+    
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
-            
+        
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br><br>
-            
+        
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" required></textarea><br><br>
-            
+        
             <button type="submit">Send Message</button>
         </form>
     </section>
@@ -62,6 +65,6 @@
     <footer>
         <p>&copy; 2026 Betha Srivalli. All Rights Reserved.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
