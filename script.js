@@ -1,17 +1,16 @@
-alert("JavaScript is connected successfully!");
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Stops the page from refreshing
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // ఇది పేజీ రీఫ్రెష్ అవ్వకుండా ఆపుతుంది
 
             const nameInput = document.getElementById('name');
             const name = nameInput ? nameInput.value : 'there';
 
-            alert(`Thank you, ${name}! Your message has been simulated successfully.`);
+            alert("Thank you, " + name + "! Your message has been simulated successfully.");
 
-            contactForm.reset(); // Clears the form fields
+            this.reset();
         });
     }
 });
